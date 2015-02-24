@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Bem vindo ao exemplo de Fragments!</string>
+    <string name="app_name">Fragments</string>
+    <string name="unknown">Desconhecido</string>
+    <string name="empty_comment">Vazio.</string>
+    
+</resources>

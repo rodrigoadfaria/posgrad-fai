@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.aula02.exemplo.intentfilter"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="5"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.aula02.exemplo.intentfilter.Menu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- Criando suas próprias actions -->
+        <activity
+            android:name="com.example.aula02.exemplo.intentfilter.filter.Tela1"
+            android:label="Tela1" >
+            <intent-filter>
+                <action android:name="ACAO_TESTE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.aula02.exemplo.intentfilter.filter.Tela2"
+            android:label="Tela2" >
+            <intent-filter>
+                <action android:name="ACAO_TESTE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="CATEGORIA_TESTE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.aula02.exemplo.intentfilter.filter.Tela3"
+            android:label="Tela3" >
+            <intent-filter>
+                <action android:name="com.teste.nome.ABRIR_TELA" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="CATEGORIA_3" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.aula02.exemplo.intentfilter.filter.Tela4"
+            android:label="Tela4" >
+            <intent-filter>
+                <action android:name="ABRIR_TELA" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="CATEGORIA_DUPLICADA" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.aula02.exemplo.intentfilter.filter.Tela5"
+            android:label="Tela5" >
+            <intent-filter>
+                <action android:name="ABRIR_TELA" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="CATEGORIA_DUPLICADA" />
+            </intent-filter>
+        </activity>
+        
+        <!-- Interceptando uma aplicação nativa -->
+        <activity
+            android:name="com.example.aula02.exemplo.intentfilter.filter.TelaContatos"
+            android:icon="@drawable/android"
+            android:label="Contatos Pós FAI" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL_PRIVILEGED" />
+            	<category android:name="android.intent.category.DEFAULT" />
+            	<data android:scheme="tel" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

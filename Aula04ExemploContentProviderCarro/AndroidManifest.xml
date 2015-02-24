@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.aula04exemplo.provider"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="5"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/AppTheme" >
+
+        <!-- Content Provider -->
+        <provider
+            android:name="com.example.aula04exemplo.provider.provider.CarroProvider"
+            android:authorities="com.example.bancodados.provider.carro" android:exported="true" />
+
+        <activity
+            android:name="com.example.aula04exemplo.provider.Menu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="CADASTRO_CARROS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.aula04exemplo.provider.CadastroCarros"
+            android:label="Cadastro Carros" />
+        <activity
+            android:name="com.example.aula04exemplo.provider.BuscarCarro"
+            android:label="Buscar Carro" />
+        <activity
+            android:name="com.example.aula04exemplo.provider.ListarCarros"
+            android:label="Lista do Cursor" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.dir/vnd.google.carros" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.aula04exemplo.provider.EditarCarro"
+            android:label="EditarCarro" >
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/vnd.google.carros" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.aula04exemplo.provider.VisualizarCarro"
+            android:label="VisualizarCarro" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.google.carros" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

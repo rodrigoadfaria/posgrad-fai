@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Activity -->
+    <string name="app_name">Aula02Exemplo03</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="empty_list">Lista Vazia</string>
+    <string name="flag">Bandeira</string>
+
+    <!-- Intent -->
+    <string name="url_label">Digite a URL e pressione o botão</string>
+    <string name="url_address">http://m.uol.com.br</string>
+    <string name="btn_open_browser"> Abrir o Browser </string>
+    
+    <string name="number_label">Digite um número de telefone</string>
+    <string name="number_phone">99999999</string>
+    <string name="btn_number_call"> Ligar </string>
+    
+    <string name="list_contacts_label">Visualizar todos os contatos\nDepois o nome escolhido é exibido em um alerta.</string>
+    <string name="btn_ok"> OK </string>
+</resources>

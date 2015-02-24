@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.aula02.exemplo"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.aula02.exemplo.Menu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.aula02.exemplo.MenuLayouts" />
+        <activity android:name="com.example.aula02.exemplo.MenuLayouts2" />
+        <activity android:name="com.example.aula02.exemplo.MenuBasicoLayouts" />
+        <activity android:name="com.example.aula02.exemplo.ActivityLayoutIdGenerica" />
+        <activity android:name="com.example.aula02.exemplo.api.ExemploLinearLayoutAPI" />
+        <activity android:name="com.example.aula02.exemplo.api.ExemploTableLayoutAPI" />
+        <activity android:name="com.example.aula02.exemplo.viewgroup.ExemploScrollView" />
+        <activity android:name="com.example.aula02.exemplo.viewgroup.ExemploGridView" />
+        <activity android:name="com.example.aula02.exemplo.viewgroup.ExemploGallery" />
+        <activity android:name="com.example.aula02.exemplo.viewgroup.ExemploImageSwitcher" />
+        <activity android:name="com.example.aula02.exemplo.viewgroup.ExemploWebView" />
+        <activity android:name="com.example.aula02.exemplo.viewgroup.tab.ExemploTabHost" />
+        <activity android:name="com.example.aula02.exemplo.viewgroup.ExemploViewFlipper" />
+        <activity android:name="com.example.aula02.exemplo.viewgroup.ExemploViewPager" />
+        <activity android:name="com.example.aula02.exemplo.viewgroup.tab.Tab1" />
+        <activity android:name="com.example.aula02.exemplo.viewgroup.tab.Tab2" />
+        <activity android:name="com.example.aula02.exemplo.viewgroup.tab.Tab3" />
+    </application>
+
+</manifest>

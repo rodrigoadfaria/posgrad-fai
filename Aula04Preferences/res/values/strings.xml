@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Preferences</string>
+    
+    <string name="checkbox_pref">Teste de Checkbox</string>
+    <string name="btn_save">Salvar</string>
+</resources>

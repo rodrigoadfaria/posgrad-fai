@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.aula03.brodcast"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity android:name="com.example.aula03.brodcast.activity.TelaTeste" />
+        <activity
+            android:name="com.example.aula03.brodcast.Menu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.example.aula03.brodcast.receiver.ExemploReceiverSimples" >
+            <intent-filter>
+                <action android:name="ABRIR_RECEIVER_SIMPLES" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        
+        <!-- configurado pela API Java -->
+        <receiver android:name="com.example.aula03.brodcast.receiver.ExemploReceiverDinamico" />
+        
+        <receiver android:name="com.example.aula03.brodcast.receiver.ExemploReceiverNewActivity" >
+            <intent-filter>
+                <action android:name="ABRIR_TELA_TESTE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name="com.example.aula03.brodcast.receiver.ExemploReceiverANR" >
+            <intent-filter>
+                <action android:name="TESTE_ANR" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <!-- executa ao terminar a inicialização (boot) do sistema operacinoal -->
+        <receiver android:name="com.example.aula03.brodcast.boot.ExemploBoot" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+
+</manifest>

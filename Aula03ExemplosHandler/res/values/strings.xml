@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Exemplos Handler</string>
+    <string name="end_splash">Fim Splash</string>
+    <string name="msg_received">A mensagem chegou!</string>
+    <string name="update_text">Atualizar o texto em 3 segundos</string>
+    <string name="dispatch_msg"> Enviar Mensagem</string>
+    <string name="dispatch_msg_3_seconds">Disparar uma mensagem com atraso de 3 segundos</string>
+    
+    <string name="number_one">Número 1</string>
+    <string name="number_two">Número 2</string>
+    <string name="five">5</string>
+    <string name="three">3</string>
+    <string name="btn_sum"> Somar </string>
+    <string name="result">Resultado</string>
+    
+    <string name="wait">Aguarde o cálculo&#8230;</string>
+</resources>

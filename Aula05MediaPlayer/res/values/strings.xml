@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Multimidia</string>
+    
+    <string name="video_player">Player Vídeo</string>
+    <string name="default_video_path">/mnt/sdcard/gglass.mp4</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="pause">Pause</string>
+    <string name="end_surf_view">Fim SurfaceView</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mapas e GPS</string>
+    <string name="map_description">Exemplo - Google Maps Android API v2</string>
+    <string name="gps_off"></string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    
+
+</resources>

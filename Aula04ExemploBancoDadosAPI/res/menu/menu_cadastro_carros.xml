@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<!-- 
+menu.add(0, INSERIR_EDITAR, 0, "Inserir Novo").setIcon(R.drawable.novo);
+		menu.add(0, BUSCAR, 0, "Buscar").setIcon(R.drawable.pesquisar);
+ -->
+    <item
+        android:id="@+id/menu_editar"
+        android:showAsAction="ifRoom"
+        android:title="Inserir Novo"
+        android:icon="@drawable/novo"/>
+    
+    <item
+        android:id="@+id/menu_buscar"
+        android:showAsAction="ifRoom"
+        android:title="Buscar"
+        android:icon="@drawable/pesquisar"/>
+
+</menu>
